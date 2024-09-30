@@ -4,23 +4,23 @@ let students = [];
 // Function to register a new student
 function registerStudent() {
     // Get values from input fields
-    let studentName = document.getElementById('studentName').value;
-    let studentId = document.getElementById('studentId').value;
+    let sName = document.getElementById('studentName').value;
+    let sId = document.getElementById('studentId').value;
     let email = document.getElementById('email').value;
-    let contactNumber = document.getElementById('contactNumber').value;
+    let Number = document.getElementById('contactNumber').value;
 
     // Input validation: check if all fields are filled
-    if (studentName === "" || studentId === "" || email === "" || contactNumber === "") {
+    if (sName === "" || sId === "" || email === "" || Number === "") {
         alert("Please fill all fields.");
         return;  // Stop the function if any field is empty
     }
 
     // Create a student object using basic OOP
     let student = {
-        name: studentName,
-        id: studentId,
+        name: sName,
+        id: sId,
         email: email,
-        contact: contactNumber
+        contact: Number
     };
 
     // Add the student object to the students array
