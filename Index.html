@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple student registration system to manage student records">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>A user-friendly system to manage student registration and records efficiently.</p>
+    </header>
+
+    <section class="container">
+        <div class="form-container">
+            <h2>Register a Student</h2>
+            <form id="studentForm">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student name" />
+    
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" placeholder="Enter student ID" />
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email address" />
+    
+                <label for="contactNumber">Contact Number</label>
+                <input type="text" id="contactNumber" name="contactNumber" placeholder="Enter contact number" />
+    
+                <button type="submit">Register Student</button>
+            </form>
+        </div>
+    
+        <div class="table-container">
+            <h2>Registered Students</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- Student records will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
